@@ -1,0 +1,217 @@
+/*
+  Autor: Facundo Becerra
+  Proyecto: NovaHabitat
+  Entrega: Preentrega 1 - Carrera Fullstack Coderhouse
+*/
+/*=====RESET-GENERAL======*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Jost", sans-serif;
+    font-weight: 400;
+}
+/* =====INDEX===== */
+.header-index{
+    background-image: url(../img/novahabitat1.jpg);
+    height: 55rem;
+    background-position: center;
+    background-size: cover;
+}
+.navbar{
+    background-color: #091115d0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10rem;
+    font-size: 1.3rem
+}
+.navbar ul{
+    display: flex;
+    list-style: none;
+    gap: 3rem;
+}
+.navbar a{
+    text-decoration: none;
+    color: #ffffff;
+}
+
+h1{
+    color: #fff;
+    font-size: 9vw;
+    text-transform: uppercase;
+    text-align: center;
+    padding-top: 10rem;
+}
+
+h2{
+    color: #fff;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 1rem 0rem;
+}
+h3{
+    color: #fff;
+    text-transform: capitalize;
+}
+.propiedades-destacadas-index{
+    background-color: #0C1F29;
+    padding-bottom: 1rem;
+}
+
+.propiedades-destacadas-index p{
+    color: #fff;
+}
+
+.props-destacadas-index{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4rem;
+    justify-content: space-around;
+}
+.card-prop-destacada-index{
+    flex: 1 1 20rem;
+    text-align: center;
+}
+.card-prop-destacada-index img{
+    border-radius: 5px;
+}
+.btn-destacadas-index{
+    display: inline-block;
+    padding: .3rem 1.5rem;
+    text-decoration: none;
+    background-color: #ffffff21;
+    color: #fff;
+    border-radius: 0.2rem;
+    text-align: center;
+}
+.art-sobre-nosotros{
+    display: flex;
+    gap: 1rem;
+    padding: 2rem;
+}
+.sobre-nosotros-txt{
+    margin: auto;
+    width: 70%;
+}
+.sobre-nosotros-index h2{
+    color: #000;
+}
+.sobre-nosotros-index p{
+    color: #000000;
+}
+.sobre-nosotros-index img{
+    width: 30rem;
+}
+.contacto-index{
+    background-color: #0C1F29;
+
+}
+.contacto-index p{
+    color: #fff;
+    padding-bottom: 1rem;
+    margin-left: 3rem;
+}
+
+.formulario-index{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 1rem;
+    padding: 2rem
+}
+label{
+    color: white;
+}
+.input-formulario{
+    width: 70%;
+    height: 2.3rem;
+    border-radius: 5px;
+    padding-left: 1rem;
+}
+
+
+footer{
+    background-color: #091115;
+    display: flex;
+    justify-content: space-around;
+}
+
+footer a{
+    text-decoration: none;
+    color: #fff;
+}
+
+footer .logo{
+    height: 2rem;
+}
+footer p{
+    display: flex;
+    align-items: center;
+    color: #fff;
+}
+footer h3{
+    font-size: 3rem;
+    text-transform: uppercase;
+    text-align: center;
+    margin: auto 0;
+}
+.subnav ul{
+    list-style: none;
+}
+
+.footer-redes{
+    display: flex;
+    align-items: center;
+}
+/* =====PROPIEDADES===== */
+.titulo-propiedades{
+    color: #000;
+}
+
+
+/* =====MEDIAQUERIES===== */
+/* Tablets */
+@media (max-width:992px){
+    .card-prop-destacada-index{
+        flex: 1 1 200rem;
+        }   
+     }
+/* Celulares grandes */
+@media (max-width:768px) {
+    header{
+        width: 100%;
+    }
+    .navbar{
+        height: auto;
+        padding: 1rem;
+        font-size: 1rem;
+    }
+    .navbar ul{
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+    .sobre-nosotros-index img{
+        width: 100%;
+    }
+    .img-sobre-nosotros{
+        display: flex;
+        justify-content: center;
+    }
+    .sobre-nosotros-txt{
+        padding-top: 1rem;
+        width: 100%;
+    }
+    .art-sobre-nosotros{
+        display: block;
+        align-items: center;
+        padding: 1rem;
+    }
+    footer{
+        display: block;
+    }
+    .footer-redes{
+        padding: 1rem;
+    }
+}

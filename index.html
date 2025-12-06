@@ -1,0 +1,124 @@
+<!-- 
+  Proyecto: NovaHabitat
+  Autor: Facundo Becerra
+  Entrega: Preentrega 1 - Carrera Fullstack Coderhouse
+  Descripción: Estructura inicial con HTML semántico y estilos básicos
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="NovaHabitat es una inmobiliaria moderna que ofrece propiedades exclusivas en venta y alquiler. Encontrá tu próximo hogar con nosotros.">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <title>NovaHabitat</title>
+</head>
+<body>
+    <header class="header-index">
+        <!-- Navbar -->
+        <nav class="navbar">
+            <ul>
+                <li><a href="#" aria-current="page">Inicio</a></li>
+                <li><a href="./pages/nosotros.html">Nosotros</a></li>
+                <li><a href="./pages/propiedades.html">Propiedades</a></li>
+                <li><a href="./pages/servicios.html">Servicios</a></li>
+                <li><a href="./pages/contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+        <!-- Hero - Principal  -->
+        <h1>novahabitat</h1> 
+
+    </header>
+    <!-- Contenido principal -->
+    <main>
+        <!-- seccion de propiedades destacadas -->
+        <section class="propiedades-destacadas-index">
+            <h2>propiedades destacadas</h2>
+            <!-- Propiedad 1 -->
+             <div class="props-destacadas-index">
+                <article class="card-prop-destacada-index">
+                     <img src="./img/casa.png" alt="Imagen de casa">
+                     <h3>Casa en venta</h3>
+                     <p>360 M2</p>
+                     <a href="#" class="btn-destacadas-index">Consultar</a>
+                </article>
+                    <!-- Propiedad 2 -->
+                <article class="card-prop-destacada-index">
+                        <img src="./img/depto.png" alt="Imagen de departamento">
+                        <h3>Departamento en alquiler</h3>
+                        <p>63 M2</p>
+                        <a href="#" class="btn-destacadas-index">Consultar</a>
+                </article>
+                    <!-- Propiedad 3 -->
+                <article class="card-prop-destacada-index">
+                        <img src="./img/terreno.png" alt="Imagen de terreno">
+                        <h3>Terreno en venta</h3>
+                        <p>720 M2</p>
+                        <a href="#" class="btn-destacadas-index">Consultar</a>
+                </article>
+            </div>
+        </section>
+        <!-- Seccion sobre nosotros -->
+        <section class="sobre-nosotros-index">
+            <h2>sobre nosotros</h2>
+            <article class="art-sobre-nosotros">
+                <div class="img-sobre-nosotros">
+                    <img src="./img/oficina.png" alt="Imagen oficinas de novahabitat">
+                </div>
+                <div class="sobre-nosotros-txt">
+                    <p>En NovaHabitat, transformamos espacios en oportunidades. </p>
+                    <p>Somos una inmobiliaria moderna y profesional que ofrece soluciones exclusivas para todo tipo de público: familias, inversores, jóvenes que buscan su primer hogar o quienes desean dar el próximo gran paso.
+                        Nos especializamos en la venta de lotes, departamentos y propiedades seleccionadas, siempre con un enfoque personalizado, transparente y orientado a resultados.
+                        Combinamos experiencia en el mercado con herramientas digitales actuales para brindarte un servicio ágil, seguro y de alta calidad.
+                        Ya sea que estés buscando tu nuevo hogar o una inversión inteligente, en NovaHabitat te acompañamos en cada etapa con el compromiso de hacer realidad tus objetivos.
+                    </p>
+                </div>
+            </article>
+        </section>
+        <!-- seccion de contacto -->
+        <section class="contacto-index"> 
+            <h2>contacto</h2>
+            <p>Estamos ubicados en Rosario, santa fe, Argentina.
+                Te invitamos a dejar tus datos y en breve un miembro de nuestro equipo se pondrá en contacto con vos
+                para brindarte asesoramiento personalizado.
+            </p>
+            <form action="" class="formulario-index">
+                <label for="nombre">Nombre y Apellido</label>
+                <input type="text" class="input-formulario" id="nombre" placeholder="Apellido y Nombre">
+                <label for="telefono">Telefono</label>
+                <input type="number" class="input-formulario" id="telefono" placeholder="Telefono">
+                <label for="email">Email</label>
+                <input type="email" class="input-formulario" id="email" placeholder="Email">
+                <label for="mensaje">Mensaje</label>
+                <input type="text" class="input-formulario" id="mensaje" placeholder="Mensaje">
+                <input type="submit" class="input-formulario" value="Enviar">
+            </form>
+        </section>
+        </main>
+        <!-- Footer o pie de pagina -->
+    <footer>
+        
+        <h3>novahabitat</h3>
+        <div class="subnav">    
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="./nosotros.html">Nosotros</a></li>
+                <li><a href="./propiedades.html">Propiedades</a></li>
+                <li><a href="./servicios.html">Servicios</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </div>
+        <div class="footer-redes">
+            <!-- Redes sociales -->
+            <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">
+                <img src="../img/Instagram_icon.png.webp" alt="Logo de Instagram de NovaHabitat" height="200px" class="logo">
+            </a>
+        </div>
+            <p>© 2025 NovaHabitat. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
