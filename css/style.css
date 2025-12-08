@@ -18,29 +18,21 @@
     background-position: center;
     background-size: cover;
 }
-.navbar{
-    background-color: #091115d0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 10rem;
-    font-size: 1.3rem
+.my-navbar{
+    background-color: #0c1f2950 !important;
+    height: 5rem;
 }
-.navbar ul{
-    display: flex;
-    list-style: none;
-    gap: 3rem;
+.my-navbar .navbar-nav .nav-link{
+    color: #fff;
+    font-size: 1.3rem;
 }
-.navbar a{
-    text-decoration: none;
-    color: #ffffff;
+.my-navbar .navbar-brand{
+    color: #fff;
 }
 
 h1{
     color: #fff;
     font-size: 9vw;
-    text-transform: uppercase;
-    text-align: center;
     padding-top: 10rem;
 }
 
@@ -74,6 +66,7 @@ h3{
     text-align: center;
 }
 .card-prop-destacada-index img{
+    width: 100%;
     border-radius: 5px;
 }
 .btn-destacadas-index{
