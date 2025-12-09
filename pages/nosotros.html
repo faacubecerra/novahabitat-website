@@ -14,8 +14,8 @@
 
     <title>NovaHabitat - Nosotros</title>
 </head>
-<body>
-    <header class="header-index">
+<body class="d-flex flex-column min-vh-100">
+    <header class="header-index h-25">
         <!-- Navbar -->
         <nav class="navbar navbar-expand-lg bg-body-tertiary my-navbar">
         <div class="container-fluid">
@@ -35,33 +35,62 @@
                     <a class="nav-link" href="./servicios.html">Servicios</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href=".contacto.html">Contacto</a>
+                    <a class="nav-link" href="./contacto.html">Contacto</a>
                 </li>
             </ul>
             </div>
         </div>
         </nav>
-        <h2>sobre nosotros</h2>
+        <h1 class="text-uppercase pages-h1 text-center p-5">Sobre nosotros</h1>
     </header>
-    <main>
-        <section class="propiedades">
-            <img src="" alt="">
+    <main class="flex-fill">
+        <section>
+            <h2>Que es novahabitat?</h2>
+            <div class="d-flex gap-5 align-items-center nosotros-novahabitat">
+                <img class="m-3 h-auto object-fit-cover nosotros-novahabitat-img" src="../img/oficina.png" alt="Imagen de oficina novahabitat">
+                <div class="text-white m-auto fs-4 nosotros-novahabitat-texto">
+                    <p>En NovaHabitat, transformamos espacios en oportunidades. </p>
+                    <p>Somos una inmobiliaria moderna y profesional que ofrece soluciones exclusivas para todo tipo de público: familias, inversores, jóvenes que buscan su primer hogar o quienes desean dar el próximo gran paso.
+                        Nos especializamos en la venta de lotes, departamentos y propiedades seleccionadas, siempre con un enfoque personalizado, transparente y orientado a resultados.
+                        Combinamos experiencia en el mercado con herramientas digitales actuales para brindarte un servicio ágil, seguro y de alta calidad.
+                        Ya sea que estés buscando tu nuevo hogar o una inversión inteligente, en NovaHabitat te acompañamos en cada etapa con el compromiso de hacer realidad tus objetivos.
+                    </p>
+                </div>
+            </div>
         </section>
+        <section class="bg-white mision-vision w-100">
+            <h2>Mision y vision</h2>
+            <div class="w-75 m-auto gap-4 d-flex justify-content-around align-items-center nosotros-mision-vision">
+                <img class="mision-vision-icons" src="../img/dart-mission-goal-success-svgrepo-com.svg" alt="">
+                <p>Brindar un servicio inmobiliario transparente y eficiente, acompañando a cada cliente en todo el proceso de compra, venta o alquiler. Nuestro objetivo es ofrecer asesoramiento profesional y soluciones integrales que permitan tomar decisiones seguras y confiables.</p>
+            </div>
+            <div class="w-75 m-auto gap-4 d-flex justify-content-around align-items-center nosotros-mision-vision">
+                <img class="mision-vision-icons" src="../img/vision-svgrepo-com.svg" alt="">
+                <p>Consolidarnos como una inmobiliaria referente en innovación y calidad de servicio, destacándonos por la confianza, la cercanía y el compromiso con las personas. Aspiramos a seguir creciendo y expandiendo nuestra presencia en la región, impulsando nuevos proyectos y transformando la experiencia inmobiliaria.</p>
+            </div>
+            </section>
     </main>
        <!-- Footer o pie de pagina -->
-    <footer>
-        <h3>novahabitat</h3>
-        <ul>
-            <li><a href="../index.html">Inicio</a></li>
-            <li><a href="#">Nosotros</a></li>
-            <li><a href="./propiedades.html">Propiedades</a></li>
-            <li><a href="./servicios.html">Servicios</a></li>
-            <li><a href="./contacto.html">Contacto</a></li>
-        </ul>
+    <footer class="mt-auto">
+        <h3 class="fs-3">novahabitat</h3>
+        <div class="subnav">
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="#">Nosotros</a></li>
+                <li><a href="./propiedades.html">Propiedades</a></li>
+                <li><a href="./servicios.html">Servicios</a></li>
+                <li><a href="./contacto.html">Contacto</a></li>
+            </ul>
+        </div>
         <!-- Redes sociales -->
-        <a href="https://www.instagram.com/ " target="_blank" rel="noopener noreferrer">
-            <img src="../img/Instagram_icon.png.webp" alt="Logo de Instagram de NovaHabitat" height="200px" class="logo">
-        </a>
+         <div class="d-flex align-items-center flex-column gap-4 justify-content-center subnav-redes-icon">
+             <a href="https://www.instagram.com/ " target="_blank" rel="noopener noreferrer">
+                 <img src="../img/Instagram_icon.png.webp" alt="Logo de Instagram de NovaHabitat" height="200px" class="logo">
+                </a>
+                <a href="https://www.facebook.com/?locale=es_LA" target="_blank" rel="noopener noreferrer">
+                    <img src="../img/Facebook_logo_(square).png" alt="Logo de Instagram de NovaHabitat" height="200px" class="logo">
+                </a>
+        </div>
         <p>© 2025 NovaHabitat. Todos los derechos reservados.</p>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
