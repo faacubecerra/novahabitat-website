@@ -1,0 +1,63 @@
+/* =====PROPIEDADES===== */
+
+.propiedades-grid {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: 180px;
+}
+
+.prop-card {
+  border: none;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+}
+
+.prop-card img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+/* posiciones grid */
+.prop-5 {
+  grid-column: 1;
+  grid-row: 1 / span 4;
+}
+
+.prop-6 {
+  grid-column: 4;
+  grid-row: 1 / span 4;
+}
+
+.prop-4 {
+  grid-column: 2;
+  grid-row: 1;
+}
+
+.prop-1 {
+  grid-column: 3;
+  grid-row: 1 / span 2;
+}
+
+.prop-2 {
+  grid-column: 2;
+  grid-row: 2 / span 2;
+}
+
+.prop-3 {
+  grid-column: 3;
+  grid-row: 3;
+}
+
+.prop-7 {
+  grid-column: 2 / span 2;
+  grid-row: 4;
+}
+
+.card-img-top{
+  background-size: cover;
+}
+
+.titulo-propiedades{
+  color: #000;
+}

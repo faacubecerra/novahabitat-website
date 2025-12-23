@@ -1,0 +1,67 @@
+/* =====MEDIAQUERIES===== */
+
+@media (max-width:992px){
+  .card-prop-destacada-index{
+    flex: 1 1 200rem;
+  }
+
+  .propiedades-grid {
+    grid-template-columns: 1fr;
+    grid-auto-rows: auto;
+  }
+
+  .prop-card img {
+    height: 220px;
+  }
+
+  .prop-card {
+    grid-column: auto !important;
+    grid-row: auto !important;
+  }
+}
+
+@media (max-width:768px) {
+  header{
+    width: 100%;
+  }
+
+  .sobre-nosotros-index img{
+    width: 100%;
+  }
+
+  .img-sobre-nosotros{
+    display: flex;
+    justify-content: center;
+  }
+
+  .sobre-nosotros-txt{
+    padding-top: 1rem;
+    width: 100%;
+  }
+
+  .art-sobre-nosotros{
+    display: block;
+    align-items: center;
+    padding: 1rem;
+  }
+
+  /* =====NOSOTROS===== */
+  .nosotros-novahabitat{
+    flex-direction: column;
+    width: 90%;
+    margin: auto;
+  }
+
+  .nosotros-novahabitat-img,
+  .nosotros-novahabitat-texto{
+    width: 100%;
+  }
+
+  .nosotros-novahabitat-img{
+    height: auto;
+  }
+
+  .nosotros-mision-vision{
+    flex-direction: column;
+  }
+}

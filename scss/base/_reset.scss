@@ -1,0 +1,34 @@
+/*=====RESET======*/
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Jost", sans-serif;
+  font-weight: 400;
+}
+
+body{
+  background-color: $primary;
+}
+
+h1{
+  color: $white;
+  font-size: 9vw;
+  padding-top: 10rem;
+}
+
+h2{
+  color: $white;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 1rem 0rem;
+}
+
+h3{
+  color: $white;
+  text-transform: capitalize;
+}
+
+label{
+  color: $white;
+}

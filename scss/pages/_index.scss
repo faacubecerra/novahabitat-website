@@ -1,0 +1,49 @@
+/* =====INDEX===== */
+.header-index{
+  background-image: url(../img/novahabitat1.jpg);
+  height: 55rem;
+  background-position: center;
+  background-size: cover;
+}
+
+.btn-destacada-index{
+  background-color: $primary;
+}
+
+.art-sobre-nosotros{
+  display: flex;
+  gap: 1rem;
+  padding: 2rem;
+}
+
+.sobre-nosotros-txt{
+  margin: auto;
+  width: 70%;
+}
+
+.sobre-nosotros-index h2{
+  color: #000;
+}
+
+.sobre-nosotros-index p{
+  color: #000000;
+}
+
+.sobre-nosotros-index img{
+  width: 30rem;
+}
+
+.contacto-index{
+  background-color: $primary;
+}
+
+.contacto-index p{
+  color: $white;
+  padding-bottom: 1rem;
+  margin-left: 3rem;
+}
+
+.section-propiedades{
+  background-color: $primary;
+  width: 100%;
+}

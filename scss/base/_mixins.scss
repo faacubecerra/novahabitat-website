@@ -1,0 +1,21 @@
+@mixin dflex-align-center {
+  display: flex;
+  align-items: center;
+}
+
+@mixin dflex-justify-center {
+  display: flex;
+  justify-content: center;
+}
+
+@mixin dflex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin dflex-space-around {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
