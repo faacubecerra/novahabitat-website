@@ -1,287 +1,308 @@
 /*
   Autor: Facundo Becerra
   Proyecto: NovaHabitat
-  Entrega: Preentrega 1 - Carrera Fullstack Coderhouse
 */
-/*=====RESET-GENERAL======*/
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Jost", sans-serif;
-    font-weight: 400;
-}
-body{
-    background-color: #0c1f29;
+/*=====RESET======*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Jost", sans-serif;
+  font-weight: 400;
 }
 
-/* =====INDEX===== */
-.header-index{
-    background-image: url(../img/novahabitat1.jpg);
-    height: 55rem;
-    background-position: center;
-    background-size: cover;
+body {
+  background-color: #0C1F29;
 }
-.my-navbar{
-    background-color: #0c1f2950 !important;
-    height: 5rem;
+
+h1 {
+  color: #fff;
+  font-size: 9vw;
+  padding-top: 10rem;
 }
-.my-navbar .navbar-nav .nav-link{
-    color: #fff;
-    font-size: 1.3rem;
+
+h2 {
+  color: #fff;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 1rem 0rem;
 }
-.my-navbar .navbar-brand{
-    color: #fff;
+
+h3 {
+  color: #fff;
+  text-transform: capitalize;
 }
+
+label {
+  color: #fff;
+}
+
+.my-navbar {
+  background-color: rgba(12, 31, 41, 0.31) !important;
+  height: 5rem;
+}
+.my-navbar .navbar-nav .nav-link {
+  color: #fff;
+  font-size: 1.3rem;
+}
+
+.my-navbar .navbar-brand {
+  color: #fff;
+}
+
 .navbar-toggler {
-    border-color: rgba(255, 255, 255, 0.5) !important;
+  border-color: rgba(255, 255, 255, 0.5) !important;
 }
-.navbar-toggler-icon {
-    background-image: url("data:image/svg+xml;charset=UTF8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 0.9)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E") !important;
-}
-h1{
-    color: #fff;
-    font-size: 9vw;
-    padding-top: 10rem;
+.navbar-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=UTF8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba(255, 255, 255, 0.8)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E") !important;
 }
 
-h2{
-    color: #fff;
-    text-transform: uppercase;
-    text-align: center;
-    padding: 1rem 0rem;
-}
-h3{
-    color: #fff;
-    text-transform: capitalize;
-}
-.btn-destacada-index{
-    background-color: #0C1F29;
-}
-.art-sobre-nosotros{
-    display: flex;
+@media (max-width: 768px) {
+  .navbar {
+    height: auto;
+    padding: 1rem;
+    font-size: 1rem;
+  }
+  .navbar .navbar-ul {
+    flex-direction: column;
+    align-items: center;
     gap: 1rem;
-    padding: 2rem;
+  }
 }
-.sobre-nosotros-txt{
-    margin: auto;
-    width: 70%;
+footer {
+  background-color: #091115;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
-.sobre-nosotros-index h2{
-    color: #000;
+footer h3 {
+  font-size: 3rem;
+  text-transform: uppercase;
+  text-align: center;
+  margin: auto 0;
 }
-.sobre-nosotros-index p{
-    color: #000000;
+footer .subnav ul {
+  list-style: none;
+  margin: auto;
 }
-.sobre-nosotros-index img{
-    width: 30rem;
+footer a {
+  text-decoration: none;
+  color: #fff;
 }
-.contacto-index{
-    background-color: #0C1F29;
+footer a:hover {
+  color: rgba(255, 255, 255, 0.8);
+}
+footer p {
+  color: #fff;
+  margin-top: 1rem;
+  text-align: center;
+}
+footer .subnav-redes-icon {
+  display: flex;
+  align-items: center;
+}
+footer .logo {
+  width: 2rem;
+  height: 2rem;
+}
 
+@media (max-width: 768px) {
+  .subnav-redes-icon {
+    flex-direction: row !important;
+    justify-content: start !important;
+    margin: 1rem;
+    margin-left: 2rem;
+  }
+  footer {
+    flex-direction: column;
+  }
 }
-.contacto-index p{
-    color: #fff;
-    padding-bottom: 1rem;
-    margin-left: 3rem;
+/* =====INDEX===== */
+.header-index {
+  background-image: url(../img/novahabitat1.jpg);
+  height: 55rem;
+  background-position: center;
+  background-size: cover;
 }
-label{
-    color: white;
+
+.btn-destacada-index {
+  background-color: #0C1F29;
 }
-.section-propiedades{
-    background-color: #0c1f29;
-    width: 100%;
+
+.art-sobre-nosotros {
+  display: flex;
+  gap: 1rem;
+  padding: 2rem;
 }
+
+.sobre-nosotros-txt {
+  margin: auto;
+  width: 70%;
+}
+
+.sobre-nosotros-index h2 {
+  color: #000;
+}
+
+.sobre-nosotros-index p {
+  color: #000000;
+}
+
+.sobre-nosotros-index img {
+  width: 30rem;
+}
+
+.contacto-index {
+  background-color: #0C1F29;
+}
+
+.contacto-index p {
+  color: #fff;
+  padding-bottom: 1rem;
+  margin-left: 3rem;
+}
+
+.section-propiedades {
+  background-color: #0C1F29;
+  width: 100%;
+}
+
+/* =====PROPIEDADES===== */
 .propiedades-grid {
-    display: grid;
-    gap: 1rem;
-    grid-template-columns: repeat(4, 1fr);
-    grid-auto-rows: 180px;
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: 180px;
 }
+
 .prop-card {
-    border: none;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+  border: none;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
 }
 
 .prop-card img {
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
 }
-/* .div5 */
+
+/* posiciones grid */
 .prop-5 {
-    grid-column: 1;
-    grid-row: 1 / span 4;
+  grid-column: 1;
+  grid-row: 1/span 4;
 }
 
-/* .div6 */
 .prop-6 {
-    grid-column: 4;
-    grid-row: 1 / span 4;
+  grid-column: 4;
+  grid-row: 1/span 4;
 }
 
-/* .div4 */
 .prop-4 {
-    grid-column: 2;
-    grid-row: 1;
+  grid-column: 2;
+  grid-row: 1;
 }
 
-/* .div1 */
 .prop-1 {
-    grid-column: 3;
-    grid-row: 1 / span 2;
+  grid-column: 3;
+  grid-row: 1/span 2;
 }
 
-/* .div2 */
 .prop-2 {
-    grid-column: 2;
-    grid-row: 2 / span 2;
+  grid-column: 2;
+  grid-row: 2/span 2;
 }
 
-/* .div3 */
 .prop-3 {
-    grid-column: 3;
-    grid-row: 3;
+  grid-column: 3;
+  grid-row: 3;
 }
 
-/* .div7 */
 .prop-7 {
-    grid-column: 2 / span 2;
-    grid-row: 4;
-}
-.card-img-top{
-    background-size: cover;
-}
-footer{
-    background-color: #091115;
-    display: flex;
-    justify-content: space-around;
+  grid-column: 2/span 2;
+  grid-row: 4;
 }
 
-footer a{
-    text-decoration: none;
-    color: #fff;
+.card-img-top {
+  background-size: cover;
 }
 
-footer .logo{
-    height: 2rem;
-}
-footer p{
-    display: flex;
-    align-items: center;
-    color: #fff;
-}
-footer h3{
-    font-size: 3rem;
-    text-transform: uppercase;
-    text-align: center;
-    margin: auto 0;
-}
-.subnav ul{
-    list-style: none;
-    margin: auto;
+.titulo-propiedades {
+  color: #000;
 }
 
-.footer-redes{
-    display: flex;
-    align-items: center;
-}
-/* =====PROPIEDADES===== */
-.titulo-propiedades{
-    color: #000;
-}
 /* =====NOSOTROS===== */
-.mision-vision h2{
-    color: #0C1F29;
+.mision-vision h2 {
+  color: #0C1F29;
 }
-.mision-vision-icons{
-    width: 20vh;
+
+.mision-vision-icons {
+  width: 20vh;
 }
+
+.pages-h1 {
+  font-size: 6vh;
+}
+
 /* =====SERVICIOS===== */
-.servicios{  
-    background-image: url(../img/bg-blur.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-/* =====Pages===== */
-.pages-h1{
-    font-size: 6vh;
+.servicios {
+  background-image: url(../img/bg-blur.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 /* =====MEDIAQUERIES===== */
-@media (max-width:992px){
-    .card-prop-destacada-index{
-        flex: 1 1 200rem;
-        }   
-     .propiedades-grid {
-        grid-template-columns: 1fr;
-        grid-auto-rows: auto;
-    }
-    .prop-card img {
-        height: 220px;
-    }
-    .prop-card {
-        grid-column: auto !important;
-        grid-row: auto !important;
-    }
-     }
-@media (max-width:768px) {
-    header{
-        width: 100%;
-    }
-    .navbar{
-        height: auto;
-        padding: 1rem;
-        font-size: 1rem;
-    }
-    .navbar ul{
-        flex-direction: column;
-        align-items: center;
-        gap: 1rem;
-    }
-    .sobre-nosotros-index img{
-        width: 100%;
-    }
-    .img-sobre-nosotros{
-        display: flex;
-        justify-content: center;
-    }
-    .sobre-nosotros-txt{
-        padding-top: 1rem;
-        width: 100%;
-    }
-    .art-sobre-nosotros{
-        display: block;
-        align-items: center;
-        padding: 1rem;
-    }
-    .subnav-redes-icon{
-        flex-direction: row !important;
-        justify-content: start !important;
-        margin: 1rem;
-        margin-left: 2rem;
-
-    }
-    footer{
-        flex-direction: column;
-    }
-    .footer-redes{
-        padding: 1rem;
-    }
-/* =====NOSOTROS===== */
-    .nosotros-novahabitat{
-        flex-direction: column;
-        width: 90%;
-        margin: auto;
-    }
-    .nosotros-novahabitat-img,
-    .nosotros-novahabitat-texto{
-        width: 100%;
-    }
-    .nosotros-novahabitat-img{
-        height: auto;
-    }
-    .nosotros-mision-vision{
-        flex-direction: column;
-    }
+@media (max-width: 992px) {
+  .card-prop-destacada-index {
+    flex: 1 1 200rem;
+  }
+  .propiedades-grid {
+    grid-template-columns: 1fr;
+    grid-auto-rows: auto;
+  }
+  .prop-card img {
+    height: 220px;
+  }
+  .prop-card {
+    grid-column: auto !important;
+    grid-row: auto !important;
+  }
 }
+@media (max-width: 768px) {
+  header {
+    width: 100%;
+  }
+  .sobre-nosotros-index img {
+    width: 100%;
+  }
+  .img-sobre-nosotros {
+    display: flex;
+    justify-content: center;
+  }
+  .sobre-nosotros-txt {
+    padding-top: 1rem;
+    width: 100%;
+  }
+  .art-sobre-nosotros {
+    display: block;
+    align-items: center;
+    padding: 1rem;
+  }
+  /* =====NOSOTROS===== */
+  .nosotros-novahabitat {
+    flex-direction: column;
+    width: 90%;
+    margin: auto;
+  }
+  .nosotros-novahabitat-img,
+  .nosotros-novahabitat-texto {
+    width: 100%;
+  }
+  .nosotros-novahabitat-img {
+    height: auto;
+  }
+  .nosotros-mision-vision {
+    flex-direction: column;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
