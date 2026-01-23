@@ -47,3 +47,12 @@
   background-color: $primary;
   width: 100%;
 }
+
+.scroll-indicator {
+  display: flex;
+  justify-content: center;
+  margin:20rem auto;
+  width: 48px;
+  height: 48px;
+  animation: bounce 1.5s infinite ease-in-out;
+}
